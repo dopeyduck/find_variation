@@ -37,3 +37,15 @@ B26K1V18U8-14	None	None	r	1881	επ εσχατου των ημερων ελευ�
 B26K1V23U24	None	None	b	1881	None
 ```
 In the above example, the script is in the same directory as the xml collation file. This is not necessary, as you can provide the location of the directory for the collation file.
+
+There is an example collation file of John 6:23 included with the script. My thanks to Joey McCollum (https://github.com/jjmccollum) from whom I borrowed it (https://github.com/jjmccollum/open-cbgm-standalone).
+
+In the following example, I ask the script to find ``All places where 1242 agrees against the base text with no more than 10 other witnesses.``
+````
+Please enter the path of the XML file: john_6_23_collation.xml
+Please enter the set of included witnesses (space or comma-separated): 1242
+Please enter the set of excluded witnesses (space or comma-separated, or leave blank if none): basetext
+Please enter the maximum number of other witnesses that may be present: 10
+````
+The result is one variation unit.
+````B04K6V23	1	1	b	1788 579 1242 2561	και````
